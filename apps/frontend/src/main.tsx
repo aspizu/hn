@@ -7,6 +7,9 @@ import {RouterProvider, createRouter} from "@tanstack/react-router"
 import {StrictMode} from "react"
 import {createRoot} from "react-dom/client"
 
+// @ts-expect-error types are not available
+import "@fontsource-variable/inter"
+
 const router = createRouter({routeTree})
 declare module "@tanstack/react-router" {
     interface Register {

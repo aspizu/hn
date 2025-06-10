@@ -4,9 +4,15 @@
     "scripts": {
         "fe": "bun --filter=hn.frontend",
         "be": "bun --filter=hn.backend",
-        "fmt": "bunx --bun prettier -w ."
+        "fmt": "bunx --bun prettier -w .",
+        "build": "bun fe build",
+        "preview": "bun fe preview"
     },
     "workspaces": [
         "apps/*"
-    ]
+    ],
+    "dependencies": {
+        "@fontsource-variable/inter": "^5.2.6",
+        "@uidotdev/usehooks": "^2.4.1"
+    }
 }

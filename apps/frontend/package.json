@@ -1,9 +1,9 @@
 {
     "scripts": {
         "dev": "bunx --bun vite",
-        "build": "bunx --bun tsc -b && vite build --base=/hn/",
+        "build": "bunx --bun tsc -b && vite build",
         "lint": "bunx --bun eslint .",
-        "preview": "bunx --bun vite preview --base=/hn/",
+        "preview": "bunx --bun vite preview",
         "fmt": "bunx --bun prettier -w ."
     },
     "name": "hn.frontend",

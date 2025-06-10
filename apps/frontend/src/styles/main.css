@@ -117,8 +117,32 @@
     body {
         @apply bg-background text-foreground;
     }
+    ::selection {
+        @apply bg-primary/85 text-primary-foreground;
+    }
+    ::-moz-selection {
+        @apply bg-primary/85 text-primary-foreground;
+    }
+}
+
+@layer components {
+    .prose a {
+        @apply text-primary/70 hover:text-primary/90 font-semibold no-underline transition-all duration-200 hover:underline;
+    }
+
+    .prose a:visited {
+        @apply text-primary/50 font-semibold;
+    }
+
+    .prose a:focus {
+        @apply outline-primary/50 outline-2 outline-offset-2;
+    }
 }
 
 :root {
     font-size: 12px;
+}
+
+@theme {
+    --font-sans: "Inter Variable", sans-serif;
 }
