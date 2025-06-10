@@ -17,7 +17,7 @@ export interface Metatag {
 }
 
 export async function getLinkPreview(url: string): Promise<LinkPreview | null> {
-    const base = import.meta.env.VITE_LINK_PREVIEW_SERVICE_URL
+    const base = "https://metaservice.onrender.com"
     const response = await fetch(`${base}/link_preview?url=${encodeURIComponent(url)}`)
     if (!response.ok) return null
     return (await response.json()) as LinkPreview
