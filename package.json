@@ -5,8 +5,8 @@
         "fe": "bun --filter=hn.frontend",
         "be": "bun --filter=hn.backend",
         "fmt": "bunx --bun prettier -w .",
-        "build": "bun fe build",
-        "preview": "bun fe preview"
+        "build": "bun --filter=hn.frontend run build",
+        "preview": "bun --filter=hn.frontend run preview"
     },
     "workspaces": [
         "apps/*"
