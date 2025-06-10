@@ -10,7 +10,10 @@ import {createRoot} from "react-dom/client"
 // @ts-expect-error types are not available
 import "@fontsource-variable/inter"
 
-const router = createRouter({routeTree})
+const router = createRouter({
+    routeTree,
+    basepath: "/hn"
+})
 declare module "@tanstack/react-router" {
     interface Register {
         router: typeof router
