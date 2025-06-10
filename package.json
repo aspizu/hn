@@ -1,0 +1,12 @@
+{
+    "name": "hn",
+    "version": "0.1.0",
+    "scripts": {
+        "fe": "bun --filter=hn.frontend",
+        "be": "bun --filter=hn.backend",
+        "fmt": "bunx --bun prettier -w ."
+    },
+    "workspaces": [
+        "apps/*"
+    ]
+}
